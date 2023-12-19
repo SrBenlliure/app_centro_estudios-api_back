@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="/api/v1/subjects" method="POST">
+        <p>
+            <label for="subject">Asignatura: </label>
+            <input type="text" name="name" id="subject">
+            <!--<select name="subject" id="subject">
+                <option value="Matemáticas">Matemáticas</option>
+                <option value="Física y Química">Física y Química</option>
+                <option value="Física">Física</option>
+                <option value="Química">Química</option>-->
+        </p>
+
+        <p>
+            <label for="course">Curso: </label>
+            <select name="course" id="course">
+                <option value="1º de ESO">1º de ESO</option>
+                <option value="2º de ESO">2º de ESO</option>
+                <option value="3º de ESO">3º de ESO</option>
+                <option value="4º de ESO">4º de ESO</option>
+                <option value="1º de Bachillerato">1º de Bachillerato</option>
+                <option value="2º de Bachillerato">2º de Bachillerato</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+
+</html>

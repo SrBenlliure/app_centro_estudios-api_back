@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <form action="/api/v1/users" method="POST">
+        <p>
+            <label for="username">Nombre de usuario: </label>
+            <input type="text" name="username" id="username" required>
+        </p>
+        <p>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" required>
+            <!--pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%&=])[A-Za-z\d@#$%&=]{8,}$/"-->
+        </p>
+        <p>
+            <label for="name">Nombre: </label>
+            <input type="text" name="name" id="name" required>
+        </p>
+        <p>
+            <label for="first_surname">Primer apellido: </label>
+            <input type="text" name="first_surname" id="first_surname" required>
+        </p>
+        <p>
+            <label for="second_surname">Segundo apellido: </label>
+            <input type="text" name="second_surname" id="second_surname">
+        </p>
+        <p>
+            <label for="phone">Teléfono: </label>
+            <input type="text" name="phone" id="phone">
+        </p>
+        <p>
+            <label for="mail">Correo electrónico: </label>
+            <input type="text" name="mail" id="mail">
+        </p>
+        <p>
+            <label for="role">Rol: </label>
+            <select name="role" id="role">
+                <option value="admin">Administrador</option>
+                <option value="teacher">Profesor</option>
+                <option value="student">Alumno</option>
+            </select>
+        </p>
+        <p>
+            <label for="status">Estado: </label>
+            <select name="status" id="status">
+                <option value="active">Activo</option>
+                <option value="inactive">Inactivo</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Registrarse">
+        </p>
+    </form>
+</body>
+</html>

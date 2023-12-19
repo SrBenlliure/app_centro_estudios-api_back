@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    width: 20vw;
+}
+.form-group{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+label{
+    width: 10vw;
+    text-align: right;
+    margin-right: 10px;
+}
+.form-button{
+    width: 20vw;
+    text-align: center;
+}
+input[type="submit"]{
+    padding:10px 15px;
+}
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}

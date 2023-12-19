@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación</title>
+</head>
+<body>
+    <p>
+        Si has olvidado tu contraseña o nombre de usuario, introduce tu e-mail
+    </p>
+    <form action="/api/v1/users/recovery" method="POST">
+        <p>
+            <label for="user_email">E-mail:</label>
+            <input type="mail" name="user_email" id="user_email">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<p>Listado escuelas:</p>
+{{#if schools}}
+<form>
+    {{#each schools}}
+    <p>
+        <input id="school-{{this.id}}" value="{{this.name}}" type="text">
+        <button class="updateSchoolButton" id="update{{this.id}}" value="{{this.id}}">Actualizar</button>
+        <button class="deleteSchool" id="delete{{this.name}}" value="{{this.id}}">Eliminar</button>
+    </p>
+    {{/each}}
+</form>
+<p>
+    <input type="submit" value="Enviar">
+</p>
+{{else}}
+<p>No se recuperaron datos de escuelas</p>
+{{/if}}
